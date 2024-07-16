@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+
+	<nav class="w3-bar w3-black">
+		<a href="#home" class="w3-button w3-bar-item">Home</a>
+		<a href="#band" class="w3-button w3-bar-item">Angebote</a>
+		<a href="#tour" class="w3-button w3-bar-item">Team</a>
+		<a href="#contact" class="w3-button w3-bar-item">Contact</a>
+	</nav>
+	
+		<section>
+			<img class ="mySlides" src="Picture1.png" style="width:100%">
+			<img class="mySlides" src="Picture2.png" style="width:100%">
+			<img class="mySlides" src="Picture3.png" style="width:100%">
+		</section>
+		<section class ="w3-container w3-center" style ="max-width:1550px">
+			<h2 class ="w3-wide">Tunjic`s Erotischer Putzdienst</h2>
+			<p class ="w3-opacity"><i>Wir machen Dreckiges sauber</i></p>
+		</section>
+		<section class="w3-container w3-content w3-center" style="max-width:220px">
+		<p class="w3-justify">
+			This is a test text to be filled out later </p>
+		</section>
+		<section class="w3-row-padding w3-center w3-light-grey">
+			<article class="w3-third">
+				<p>Ramira</p>
+				<img src="1.png" alt="Ramira" style="width:100%">
+			</article>
+			<article class="w3-third">
+				<p>Nicoletta</p>
+				<img src="2.png" alt="Nicoletta" style="width:100%">
+			</article>
+			<article class="w3-third">
+				<p>Pedro</p>
+				<img src="3.png" alt="Pedro" style="width:100%">
+			</article>
+		</section>
+		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+			<a href="#"><i class="fa fa-facebook-official"></i></a>
+			<a href="#"><i class="fa fa-pinterest-p"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-flickr"></i></a>
+			<a href="#"><i class="fa fa-linkedin"></i></a>
+			<p class="w3-medium">
+			Powered by <a href="tunjics" target="_blank">Tunjic`s</a>
+			</p>
+		</footer>
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 3000);
+	}
+	</script>
+</body>
+</html>
